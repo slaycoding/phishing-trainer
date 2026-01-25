@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Phishing Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Необязательно, но если хочешь подключить красивые шрифты, раскомментируй:
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  -->
+</head>
+<body>
+  <div class="app">
+    <h1>Phishing Trainer</h1>
+    <p class="subtitle">Can you tell if this message is phishing?</p>
+
+    <!-- Карточка с самим сообщением -->
+    <div id="card" class="card">
+      <div id="message-text" class="message-text">
+        <!-- сюда JS подставляет текст письма -->
+      </div>
+
+      <!-- Кнопки ответа -->
+      <div class="buttons">
+        <button id="btn-phishing" class="btn btn-danger">This is phishing</button>
+        <button id="btn-legit" class="btn btn-safe">This is safe</button>
+      </div>
+
+      <!-- Обратная связь по текущему вопросу -->
+      <div id="feedback" class="feedback hidden">
+        <p id="feedback-result"></p>
+        <p id="feedback-explanation"></p>
+        <button id="btn-next" class="btn btn-next">Next</button>
+      </div>
+    </div>
+
+    <!-- Итоговый экран -->
+    <div id="summary" class="summary hidden">
+      <h2>Results</h2>
+      <p id="summary-score"></p>
+      <p id="summary-percentage"></p>
+      <ul id="summary-list"></ul>
+      <button id="btn-restart" class="btn btn-next">Start again</button>
+    </div>
+
+    <!-- Статус внизу -->
+    <div class="status">
+      <span id="progress"></span>
+      <span id="score"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
