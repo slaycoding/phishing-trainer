@@ -1,4 +1,5 @@
 Phishing Trainer
+https://slaycoding.github.io/phishing-trainer/
 
 An interactive trainer that helps you learn to distinguish between phishing messages and safe ones. 
 The project works completely in the browser and does not require the installation of a server part.
